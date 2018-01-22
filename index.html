@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mystartpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <h1 class=date></h1>
+      <div class="contentContain">
+      <div class="circleOne circle"><i class="material-icons">code</i></div>
+      <div class="circleTwo circle"><i class="material-icons">people</i></div>
+      <div class="circleThree circle"><i class="material-icons">shopping_cart</i></div>
+      <div class="circleFour circle"><i class="material-icons">school</i></div>
+      <div class="circleFive circle"><i class="material-icons">attach_money</i></div>
+      <div class="inputs">
+        <form method="get" action="http://www.google.com/search">
+          <input type="text" name="q" placeholder="google" class="search">
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <form method="get" action="https://en.wikipedia.org/w/index.php">
+          <input type="text" name="search" placeholder="wikipedia" class="search">
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+      </div>
+      <ul class="weath">
+        <li id="weather"></li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal develop">
+      <ul>
+        <li><a href="http://codepen.io">CodePen</a></li>
+        <li><a href="https://github.com">GitHub</a></li>
+        <li><a href="https://HackerRank.com">HackerRank</a></li>
+        <li><a href="http://LeetCode.com">LeetCode</a></li>
+        <li><a href="https://web-development.zeef.com">web dev resources</a></li>
+        <li><a href="http://stackoverflow.com">Stack Overflow</a></li>
+        <li><a href="https://stackexchange.com/">Stack Exchange</a></li>
+      </ul>
+    </div>
+    <div class="modal social">
+      <ul>
+        <li><a href="https://www.facebook.com" >Facebook</a></li>
+        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        <li><a href="https://www.reddit.com">Reddit</a></li>
+        <li><a href="https://www.twitter.com">Twitter</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.goodreads.com">Goodreads</a></li>
+        <li><a href="https://www.myanimelist.com">MyAnimeList</a></li>
+
+      </ul>
+    </div>
+    <div class="modal shop">
+      <ul>
+        <li><a href="https://www.amazon.com">Amazon</a></li>
+        <li><a href="https://www.ebay.com">eBay</a></li>
+        <li><a href="http://www.coolstuffinc.com">CoolStuffInc</a></li>
+        <li><a href="https://www.miniaturemarket.com">Miniature Market</a></li>
+        <li><a href="https://www.craigslist.org">CraigsList</a></li>
+      </ul>
+    </div>
+    <div class="modal learn">
+      <ul>
+        <li><a href="https://codecademy.com">codecademy</a></li>
+        <li><a href="http://duolingo.com">duolingo</a></li>
+        <li><a href="http://freecodecamp.com">free code camp</a></li>
+        <li><a href="http://theodinproject.com">the odin project</a></li>
+        <li><a href="http://udacity.com">udacity</a></li>
+        <li><a href="https://www.reddit.com/r/learnprogramming/">/r/learnprogramming</a></li>
+        <li><a href="https://www.reddit.com/r/cscareerquestions/">/r/cscareerquestions</a></li>
+      </ul>
+    </div>
+    <div class="modal finance">
+      <ul>
+        <li><a href="https://www.chase.com">Chase</a></li>
+        <li><a href="https://PayPal.com">PayPal</a></li>
+        <li><a href="https://venmo.com">Venmo</a></li>
+        <li><a href="https://wellsfargo.com">Wells Fargo</a></li>
+        <li><a href="https://upwork.com">Upwork</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
