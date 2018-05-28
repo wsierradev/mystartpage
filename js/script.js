@@ -1,8 +1,12 @@
 $(document).ready(function() {
-  testy();
+  navigator.geolocation.getCurrentPosition(function(position) {
+  loadWeather(position.coords.latitude+','+position.coords.longitude)
+  });
+  
+  dateDisplay();
 });
 
-function testy(){
+function dateDisplay(){
   date = new Date();
   monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
     "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
@@ -11,7 +15,7 @@ function testy(){
   $(".date").text(days[date.getDay()] + " " + monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear());
 };
 
-($(function(){
+$(function(){
   $('.circle').click(function(){
     $('.overlay').addClass('open');
   });
@@ -39,13 +43,6 @@ function testy(){
     $(this).removeClass('open');
     $('.modal').removeClass('open');
   });
-
-
-}));
-
-
-$(document).ready(function() {
-  loadWeather('Atlantic City','');
 });
 
 function loadWeather(location, woeid) {
